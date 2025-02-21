@@ -1,0 +1,52 @@
+<div class="conversor">
+
+    <div class="dados">
+
+        <div class="campos">
+            <div class="de">
+
+                <h2>De:</h2>
+
+                <div class="numero">
+                    <select [(ngModel)]="selectDe" name="de" class="base" (change)="limpaResposta('de')">
+                        <option value="2">Binário</option>
+                        <option value="10">Decimal</option>
+                        <option value="16">Hexadecimal</option>
+                        <option value="8">Octal</option>
+                    </select>
+
+                    <input [(ngModel)]="numero" type="text" (input)="retiraAlerta($event)"
+                        [class.alerta]="exibirAlerta === true" class="input-numero">
+
+                    <span *ngIf="exibirAlerta === true" class="texto-alerta">{{alerta}}</span>
+                </div>
+
+            </div>
+
+            <div class="para">
+
+                <h2>Para:</h2>
+
+                <div class="numero">
+                    <select [(ngModel)]="selectPara" name="para" class="base" (change)="limpaResposta('')">
+                        <option value="10">Decimal</option>
+                        <option value="16">Hexadecimal</option>
+                        <option value="8">Octal</option>
+                        <option value="2">Binário</option>
+                    </select>
+
+                    <input [(ngModel)]="resposta" type="text" class="input-numero resultado" readonly>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="div-btn">
+            <button class="btn-converter" (click)="converter()">Converter</button>
+            <button class="btn-limpar" (click)="limparTudo()">Limpar</button>
+        </div>
+
+    </div>
+
+</div>
