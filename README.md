@@ -1,27 +1,30 @@
-# Conversor
+# Conversor de Bases Numéricas
+Conversor simples, apenas para prática de codificação em Angular.
+Realiza a conversão para as seguintes bases: Decimal, Hexadecimal, Binário e Octal
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.14.
+## Tecnologias
 
-## Development server
+`Angular 16.2.14` & 
+`Node v18.19.1`
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Como executar
+Considerando que você já tenha o npm, Node, Angular e git instalados e configurados na sua máquina execute os seguintes comandos:
 
-## Code scaffolding
+### No git
+  `git clone https://github.com/InacioSouza/Conversor-de-bases-Angular.git` para baixar o projeto
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Na pasta do projeto
+`npm install` para baixar as dependências
 
-## Build
+`ng serve` para rodar o projeto
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### No navegador
 
-## Running unit tests
+cole a URL `http://localhost:4200/` na barra de navegação.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Com estes passos a aplicação estará funcionando. A interface abaixo será renderizada na sua tela:
 
-## Running end-to-end tests
+![Interface do conversor](images/interface.png)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
